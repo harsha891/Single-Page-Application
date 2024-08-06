@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehumidifier Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dehumidifier Store</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="product-list">Shopping</button>
+            <button class="tab-button" data-tab="shopping-cart">Cart</button>
+        </div>
+    </header>
+    <main>
+        <section id="product-list" class="tab-content active">
+            <!-- Products will be loaded here dynamically -->
+        </section>
+        <section id="shopping-cart" class="tab-content">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here dynamically -->
+            </div>
+            <div id="cart-summary">
+                <p>Subtotal: $<span id="subtotal-price">0.00</span></p>
+                <p>Tax (13%): $<span id="tax-price">0.00</span></p>
+                <p>Total: $<span id="total-price">0.00</span></p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

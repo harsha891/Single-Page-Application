@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Dehumidifier A",
+        "price": 59.99,
+        "image": "images/tolifeDehumidifier.png"
+    },
+    {
+        "id": 2,
+        "name": "Dehumidifier B",
+        "price": 89.99,
+        "image": "images/easyaccDehumidifier.png"
+    },
+    {
+        "id": 3,
+        "name": "Dehumidifier C",
+        "price": 159.99,
+        "image": "images/costwayDehumidifierp1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dehumidifier D",
+        "price": 179.99,
+        "image": "images/costwayDehumidifier.png"
+    },
+    {
+        "id": 5,
+        "name": "Dehumidifier E",
+        "price": 99.99,
+        "image": "images/nineskyDehumidifier.png"
+    }
+]
