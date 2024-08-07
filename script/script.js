@@ -110,3 +110,31 @@ function switchTab(tabId) {
     });
     document.querySelector(`.tab-button[data-tab="${tabId}"]`).classList.add('active');
 }
+
+// Checkout button Functionality
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("checkout");
+var span = document.getElementsByClassName("close")[0];
+
+var payBtn = document.getElementById("pay");
+var cancelBtn = document.getElementById("cancel");
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+payBtn.onclick = function () {
+    alert("Payment processed successfully!");
+    modal.style.display = "none";
+}
+
+cancelBtn.onclick = function () {
+    alert("Payment cancelled.");
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
