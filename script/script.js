@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
             switchTab(button.dataset.tab);
         });
     });
+
+    updateCart();
 });
 
 let cart = [];
@@ -77,6 +79,19 @@ function updateCart() {
         subtotalPrice += item.price * item.quantity;
     });
 
+    if (subtotalPrice == 0) {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+            <span>Your cart is empty.</span>
+        `;
+        cartItems.appendChild(cartItem);
+
+        document.getElementById("cart-summary").style.display = 'none';
+    }
+    else {
+        document.getElementById("cart-summary").style.display = 'block';
+    }
     const taxPrice = subtotalPrice * 0.13;
     const totalPrice = subtotalPrice + taxPrice;
 
