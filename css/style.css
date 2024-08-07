@@ -43,9 +43,8 @@ main {
 }
 
 section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 10px 0;
+    width: 100%;
+    margin: 10px 5px;
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -139,6 +138,7 @@ button:hover {
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-left: 10px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -154,8 +154,12 @@ button:hover {
         justify-content: space-between;
     }
 
-    #product-list,
-    #shopping-cart {
-        width: 45%;
+    #product-list.full-page {
+        width: 100%;
+    }
+
+    #product-list.half-page,
+    #shopping-cart.half-page {
+        width: 50%;
     }
 }
