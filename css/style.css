@@ -74,9 +74,9 @@ section.active {
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 100px;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -135,7 +135,17 @@ button:hover {
 }
 
 .remove {
-    color: rgb(216, 48, 48);
+    background-color: rgb(216, 48, 48);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.remove:hover {
+    background-color: rgb(220, 36, 36);
 }
 
 @media (min-width: 768px) {

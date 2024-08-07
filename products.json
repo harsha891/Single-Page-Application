@@ -1,32 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Dehumidifier A",
+        "name": "ToLife Dehumdifier",
         "price": 59.99,
         "image": "images/tolifeDehumidifier.png"
     },
     {
         "id": 2,
-        "name": "Dehumidifier B",
+        "name": "EasyAcc Dehumdifier",
         "price": 89.99,
         "image": "images/easyaccDehumidifier.png"
     },
     {
         "id": 3,
-        "name": "Dehumidifier C",
+        "name": "CostWay Dehumdifier",
         "price": 159.99,
         "image": "images/costwayDehumidifierp1.jpg"
     },
     {
         "id": 4,
-        "name": "Dehumidifier D",
+        "name": "CostWay Mini Dehumdifier",
         "price": 179.99,
         "image": "images/costwayDehumidifier.png"
     },
     {
         "id": 5,
-        "name": "Dehumidifier E",
+        "name": "Ninesky Dehumidifier",
         "price": 99.99,
         "image": "images/nineskyDehumidifier.png"
+    },
+    {
+        "id": 6,
+        "name": "Hyper Dehumidifier",
+        "price": 179.99,
+        "image": "images/HyperDehumidifier.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Fridge Master Dehumidifier",
+        "price": 99.99,
+        "image": "images/frisdgemaster.avif"
     }
 ]
