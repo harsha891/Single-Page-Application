@@ -148,6 +148,10 @@ button:hover {
     background-color: rgb(220, 36, 36);
 }
 
+#checkout {
+    margin: 20px 0;
+}
+
 @media (min-width: 768px) {
     main {
         flex-direction: row;
