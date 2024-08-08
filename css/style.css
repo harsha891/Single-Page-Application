@@ -192,6 +192,23 @@ button:hover {
     border-radius: 8px;
 }
 
+/* Styling footer part */
+footer {
+    margin: 10px 0;
+}
+
+footer div {
+    font-size: 0.75em;
+    padding: 0 1em;
+    text-align: center;
+    color: #051d40;
+}
+
+footer div a {
+    color: #051d40;
+    text-decoration: none;
+}
+
 
 @media (min-width: 768px) {
     main {
