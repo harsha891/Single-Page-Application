@@ -210,7 +210,7 @@ footer div a {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     main {
         flex-direction: row;
         justify-content: space-between;
