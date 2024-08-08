@@ -141,6 +141,17 @@ btn.onclick = function () {
 payBtn.onclick = function () {
     alert("Payment processed successfully!");
     modal.style.display = "none";
+
+    const cartItems = document.getElementById('cart-items');
+
+    // Remove all items from the cart
+    cartItems.innerHTML = `<div>
+            <span>Your cart is empty.</span>
+        </div>`;
+
+    document.getElementById("cart-summary").style.display = 'none';
+    cart.splice(0, cart.length);
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 cancelBtn.onclick = function () {
