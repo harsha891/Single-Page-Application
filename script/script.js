@@ -46,6 +46,7 @@ function addToCart(productId) {
         .then(response => response.json())
         .then(products => {
             const product = products.find(p => p.id === productId);
+            showNotification("" + product.name + " added to the cart");
             if (product) {
                 const existingProductIndex = cart.findIndex(p => p.id === productId);
                 if (existingProductIndex !== -1) {
@@ -105,6 +106,7 @@ function removeFromCart(productId) {
     if (existingProductIndex !== -1) {
         cart[existingProductIndex].quantity -= 1;
         if (cart[existingProductIndex].quantity <= 0) {
+            showNotification(cart[existingProductIndex].name + " removed from the cart.");
             cart.splice(existingProductIndex, 1);
         }
         localStorage.setItem('cart', JSON.stringify(cart));
@@ -124,6 +126,17 @@ function switchTab(tabId) {
         button.classList.remove('active');
     });
     document.querySelector(`.tab-button[data-tab="${tabId}"]`).classList.add('active');
+}
+
+function showNotification(messege) {
+    var notification = document.getElementById('notification');
+    notification.innerHTML = '<span>' + messege + '</span>';
+    notification.style.display = 'block';
+
+    // Hide the notification after 2 seconds
+    setTimeout(function () {
+        notification.style.display = 'none';
+    }, 2000);
 }
 
 // Checkout button Functionality
